@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini JavaScript Quiz</title>
+  <link rel="stylesheet" href="basketballminiquiz.css">
+</head>
+<body>
+
+  <h1>Mini Basketball Quiz!</h1>
+  <p>Hi this is my mini basketball quiz. These will be fairly easy questions to know if you watch basketball. No worries if you get it wrong but it should let know if youv have anything to work on!</p>
+
+  <!-- Quiz Section -->
+  <div class="section" id="quiz">
+    <form id="quizForm">
+      <h3>1. Who won the last NBA Championship?</h3>
+      <label><input type="radio" name="q1" value="Thunder"> Thunder</label><br>
+      <label><input type="radio" name="q1" value="Pacers"> Pacers</label><br>
+      <label><input type="radio" name="q1" value="Mavericks"> Mavericks</label><br>
+
+      <h3>2. How many championships does Lebron James have?</h3>
+      <label><input type="radio" name="q2" value="8"> 8</label><br>
+      <label><input type="radio" name="q2" value="2"> 2</label><br>
+      <label><input type="radio" name="q2" value="4"> 4</label><br>
+
+      <h3>3. What year did the Golden State Warriors win a championship?</h3>
+      <label><input type="radio" name="q3" value="2016"> 2016</label><br>
+      <label><input type="radio" name="q3" value="2021"> 2021</label><br>
+      <label><input type="radio" name="q3" value="2018"> 2018</label><br>
+
+      <br>
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+  </div>
+
+  <!-- Results Section -->
+  <div class="section" id="results">
+    <h2>Your Results</h2>
+    <p id="scoreText"></p>
+  </div>
+
+  <script src="basketballminiquiz.js"></script>
+</body>
+</html>
